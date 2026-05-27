@@ -1,0 +1,18 @@
+CREATE DATABASE loja;
+
+USE loja;
+
+CREATE TABLE produtos (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(100) NOT NULL,
+    categoria VARCHAR(100) NOT NULL,
+    preco DECIMAL(10,2) NOT NULL
+);
+
+INSERT INTO produtos (nome, categoria, preco) VALUES
+('Teclado Gamer', 'Informática', 150.00),
+('Mouse Logitech', 'Informática', 90.00),
+('Monitor 24 Polegadas', 'Informática', 850.00),
+('Cadeira Escritório', 'Móveis', 600.00),
+('Mesa Gamer', 'Móveis', 700.00),
+('Fone Bluetooth', 'Áudio', 120.00);
